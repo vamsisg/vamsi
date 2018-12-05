@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+     {% load staticfiles %}
+</head>
+<body>
+     {% for x in message %}
+         <img src="{% static '/images/'%}{{ x }}">
+     {% endfor %}
+</body>
+</html>

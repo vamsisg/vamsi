@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+   {% for x,y in emp.items %}
+       <ul>
+           <li> {{ x }}</li>
+           <li> {{ y.name}}</li>
+          <li>{{ y.salary }}</li>
+       </ul>
+
+   {% endfor %}
+
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="/login/" method="post">
+    {% csrf_token %}
+    <label>username:</label>
+    <input type="text" name="user">
+    <label>password:</label>
+    <input type="password" name="pass">
+    <input type="radio" value="admin" name="radio">admin
+    <input type="radio" value="user" name="radio">user
+    <input type="radio" value="employee" name="radio">employee
+    <input type="submit" value="submit">
+</form>
+
+</body>
+</html>

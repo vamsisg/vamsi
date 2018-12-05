@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="/boxedDetails/" method="post">
+    {% csrf_token %}
+    <table align="centre" >
+        <tr>
+            <select name="s1">
+                 <option>select</option>
+                <option>core python</option>
+                 <option>python</option>
+                 <option>java</option>
+                 <option>django</option>
+            </select>
+        </tr>
+
+        <tr>
+            <td>
+                <input type="submit" >
+            </td>
+        </tr>
+    </table><br> <br> <br><br>
+</form>
+ {% if message == 'select'%}
+    <b>select other option</b>
+ {% else %}
+    {{ message }}
+ {% endif %}
+
+
+</body>
+</html>
